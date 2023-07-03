@@ -1,0 +1,16 @@
+	LDA>A
+	ADD>B
+	STA>C
+	OUT
+	JMP>D
+A,	5
+B,	7
+C,	0
+D,	LDF		  /A000
+	NND	0010H /5000 0010
+	ADD	1	  /7000 0001
+	SIZ		  /0008
+	RAS		  /1000
+	JMP		  /0004
+	LDA 0	  /3000 0000
+	STF		  /0010
